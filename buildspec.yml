@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t live1:latest .
+      - docker build -t live1 .
       - docker tag live1:latest 074356481843.dkr.ecr.us-east-1.amazonaws.com/live1:latest
   post_build:
     commands:
