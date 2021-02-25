@@ -21,7 +21,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push 074356481843.dkr.ecr.us-east-1.amazonaws.com/live1:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"nodeapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"node","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
